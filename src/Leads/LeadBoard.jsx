@@ -9,8 +9,10 @@ function LeadBoard() {
     console.log(isLoading,data)
      const [deleteFn] = useDeleteLeadMutation();
     function deleteLead(id){
-        deleteFn(id).then((res)=>{console.log(res)})
-        getAllLeadsFn();
+        deleteFn(id).then((res)=>{console.log(res)
+
+          getAllLeadsFn();
+        })
     }
 
     function editLead(id){
@@ -21,7 +23,7 @@ function LeadBoard() {
             return a;
         })
     }
-
+   
     function filterLeads(l){
       console.log("Lead:",l)
       return l.intrestedCourse.toLowerCase().includes(search.toLowerCase())
@@ -31,7 +33,7 @@ function LeadBoard() {
     var filteredLeads = data?.filter(filterLeads);
   return (
     <div className='table-responsive'>
-      <input type="text" className='form-control mb-2 mt-1 w-25' style={{marginLeft:'550px'}} value={search} onChange={(e)=> setSearch(e.target.value)} />
+      {/* <input type="text" className='form-control mb-2 mt-1 w-25' style={{marginLeft:'550px'}} value={search} onChange={(e)=> setSearch(e.target.value)} /> */}
       <table className='table table-bordered container text-center shadow'>
         <thead>
             <tr>
