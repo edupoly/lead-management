@@ -5,7 +5,7 @@ import { Outlet } from 'react-router-dom'
 function App() {
   
   return (
-    <div className='p-3 vh-100' style={{background: "#fff"}}>
+    <div className='vh-100' style={{background: "#fff"}}>
       <Outlet/>
     </div>
   )

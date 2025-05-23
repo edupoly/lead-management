@@ -59,7 +59,7 @@ function LeadBoard() {
                               <td className='d-none d-md-table-cell'>{d.mobile}</td>
                               <td className='d-none d-md-table-cell'>{d.academics}</td>
                               <td className='d-none d-md-table-cell'>{d.experience}</td>
-                              <td>
+                              <td className='d-flex gap-2'>
                                 <button className='btn btn-danger' onClick={()=>{deleteLead(d._id)}}><i class="bi bi-x-square"></i></button>
                                 {/* <Link to='/dashboard/edit'><button className='btn btn-primary ms-2' onClick={()=>{editLead(d._id)}}>Edit</button></Link> */}
                                 <Link to={`/dashboard/leaddetails/${d._id}`}><button className='btn btn-info ms-2'><i class="bi bi-three-dots"></i></button></Link>

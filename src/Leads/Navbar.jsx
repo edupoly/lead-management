@@ -10,7 +10,7 @@ function Navbar() {
     <div>
         <nav className="shadow navbar navbar-expand-lg  bg-dark" >
             <div className="container-fluid">
-                <Link className="navbar-brand text-light" to="/">Home</Link>
+                <Link className="navbar-brand text-light" to="/"><h4>Home</h4></Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
                 </button>

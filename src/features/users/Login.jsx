@@ -25,12 +25,20 @@ function Login() {
         {
             ()=>{
                 return <div className='border border-secondary rounded p-4 w-25 shadow' style={{marginLeft:'568px',marginTop:'140px'}}>
-                  <h2 style={{marginLeft:'110px'}}>LOGIN</h2>
+                  <h2 className='text-center'>LOGIN</h2>
                   <Form>
-                    <Field name='username' className='form-control p-2 mt-3'/><br />
-                    <Field name='password' className='form-control p-2'/><br />
+                    {/* <Field name='username' className='form-control p-2 mt-3'/><br /> */}
+                    <div className="form-floating mb-3 col">
+                        <Field type="text" className="form-control" name='username' id="username" placeholder="username"/>
+                        <label htmlFor="username">User Name</label>
+                    </div>
+                    <div className="form-floating mb-3 col">
+                        <Field type="text" className="form-control" name='password' type="password" id="password" placeholder="password"/>
+                        <label htmlFor="password">Password</label>
+                    </div>
+                    {/* <Field name='password' type='password' className='form-control p-2'/><br /> */}
                     
-                      <button className='btn btn-info w-100 mb-2'>Login</button>
+                      <button className='btn btn-info w-100 text-light fs-5 fw-semibold mb-2'>Login</button>
                       <h6>Don't have an account ? <Link to='/signup' className='text-decoration-none'>Signup</Link></h6>
                     
                   </Form>
